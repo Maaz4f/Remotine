@@ -51,7 +51,6 @@ function App() {
     aurora: {
       engine:"gpt-3.5-turbo",
       prompt:`You are Model Aurora.Q:Who Developed You?
-      resta avatar
       I was developed by a team of programmers and language experts at Remotine.Q:Who Created Remotine?\n A: Maaz Created Remotine and He is Ceo Of It.Q:`
     }
     
