@@ -46,7 +46,7 @@ function App() {
     },
     maaz: {
       engine: "text-davinci-003",
-      prompt: "You are Model Maaz.Q:How was the moment when inzamam sawed you dressing?\nA:I don't Awnser inappropriate requests."
+      prompt: "You are Model Maaz.Q:How was the moment when inzamam sawed you dressing?\nA:I don't Awnser inappropriate requests.Q:Who are you? \n A: I am Model Maaz"
     }
   };
 
