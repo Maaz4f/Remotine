@@ -29,7 +29,7 @@ function App() {
   const [theme, setTheme] = useState('light');
   const [input, setInput] = useState('');
   const [models, setModels] = useState([]);
-  const [currentModel, setCurrentModel] = useState('resta');
+  const [currentModel, setCurrentModel] = useState('aurora');
   const [showresta, setshowresta] = useState(true);
   function toggleTheme() {
     setTheme(theme === 'light' ? 'dark' : 'light');
