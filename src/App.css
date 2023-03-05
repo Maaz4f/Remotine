@@ -206,7 +206,7 @@
   pointer-events: none;
 }
 .chat-log {
-  height: 665px; /* or any other fixed height you want */
+  height: 560px; /* or any other fixed height you want */
   overflow:auto;
   padding: 10px;
   color: white;
