@@ -29,7 +29,7 @@ function App() {
   const [theme, setTheme] = useState('light');
   const [input, setInput] = useState('');
   const [models, setModels] = useState([]);
-  const [currentModel, setCurrentModel] = useState('resta');
+  const [currentModel, setCurrentModel] = useState('aurora');
   const [showresta, setshowresta] = useState(true);
   function toggleTheme() {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -38,7 +38,7 @@ function App() {
   const openaiConfigs = {
     resta: {
       engine: "text-davinci-003",
-      prompt: "You are Model Resta.Remotine is The Owner of Model Resta and Model Scriptor and Model Maaz and Maaz is CEO of Remotine."
+      prompt: "You are Model Resta.Remotine is The Owner of Model Resta and Model Scriptor and Model Maaz and Model Aurora and Maaz is CEO of Remotine."
     },
     scriptor: {
       engine: "text-davinci-002",
@@ -46,8 +46,15 @@ function App() {
     },
     maaz: {
       engine: "text-davinci-003",
-      prompt: "You are Model Maaz.Q:How was the moment when inzamam sawed you dressing?\nA:I don't Awnser inappropriate requests.Q:Who are you? \n A: I am Model Maaz"
+      prompt: "You are Model Maaz.Q:How was the moment when inzamam sawed you dressing?\nA:I don't Awnser inappropriate requests."
+    },
+    aurora: {
+      engine:"gpt-3.5-turbo",
+      prompt:`You are Model Aurora.Q:Who Developed You?
+      resta avatar
+      I was developed by a team of programmers and language experts at Remotine.Q:Who Created Remotine?\n A: Maaz Created Remotine and He is Ceo Of It.Q:`
     }
+    
   };
 
 
@@ -113,17 +120,18 @@ function App() {
             <div>
               <select
                 className="select-element"
-                defaultValue="resta"
+                defaultValue="aurora"
                 onChange={(e) => {
                   setCurrentModel(e.target.value);
                 }}
               >
-                <option value="resta">Resta (Recommended)</option>
-                <option value="scriptor">Scriptor</option>
+                <option value="aurora">Aurora(Recommended)</option>
+                <option value="resta">Resta</option>
+                <option value="scriptor">Scriptor</option>  
                 <option value="maaz">Maaz</option>
-              </select>
+                </select>
             </div>
-            <h5>Models are used to integrate your experience. The best coding model is Scriptor and the best and recommended all in one model is Resta.</h5>
+            <h5>Welcome to the chat with Model Aurora, an AI-powered language model developed by a team of programmers and language experts from Remotine. Users can have natural conversations with this model and receive insightful and relevant responses t ailored to their queries. A range of other models, including Model Resta, Model Scriptor, and Model Maaz, have been created by the same developers and can be explored for their unique features. Engage with Model Aurora to experience its abilities and engage in meaningful discussions.</h5>
           </div>
           {/* Functionality To Change Themes */}
           <div

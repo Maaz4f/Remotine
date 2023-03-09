@@ -175,7 +175,7 @@
   color: black;
   font: bold;
   font-size: 1.25em;
-  height: 50px;
+  height: 50    px;
   overflow:auto;
   
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
@@ -245,8 +245,7 @@
 }
 .chat-message-center {
   max-width: 480px;
-  margin-left:auto;
-  margin-right: 600px;
+  margin-right: 200px;
   padding: 12px;
   display: flex;
   padding-left: 24px ;
@@ -298,20 +297,29 @@
 }
 
 @media screen and (max-width: 1334px) {
+  .chat-message-center {
+    max-width: 480px;
+    margin-right: 200px;
+    padding: 12px;
+    display: flex;
+    padding-left: 24px ;
+    padding-right: 24px;
+  }
+
 .chat-input-holder {
   padding: 24px;
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
   .chat-log.light {
-    overflow: auto;
+    overflow:auto;
+    height:800px;
+    /* display: block; */
   }
   .chat-log.dark {
-    overflow-y: auto;
-    overflow-x: auto;
+    overflow:auto;
+    height:800px;
+    /* display: block; */
   }
+  
   .sidemenu {
     height: auto;
     width: auto;
@@ -355,6 +363,14 @@
 }
 
 @media screen and (max-width: 900px) {
+  .chat-message-center {
+    max-width: 480px;
+    margin-right: 200px;
+    padding: 12px;
+    display: flex;
+    padding-left: 24px ;
+    padding-right: 24px;
+  }
   .chat-input-holder {
     padding: 24px;
     position: sticky;
