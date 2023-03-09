@@ -46,13 +46,7 @@ function App() {
     },
     maaz: {
       engine: "text-davinci-003",
-      prompt: "You are Model Maaz.Q:How was the moment when inzamam sawed you dressing?\nA:I don't Awnser inappropriate requests."
-    },
-    aurora: {
-      engine:"gpt-3.5-turbo",
-      prompt:`You are Model Aurora.Q:Who Developed You?
-      resta avatar
-      I was developed by a team of programmers and language experts at Remotine.Q:Who Created Remotine?\n A: Maaz Created Remotine and He is Ceo Of It.Q:`
+      prompt: "You are Model Maaz.Q:How was the moment when inzamam sawed you dressing?\nA:I don't Awnser inappropriate requests.Q:Who are you? \n A: I am Model Maaz"
     }
     
   };
